@@ -3,8 +3,8 @@ namespace APBD3;
 public class GasContainer : Container, IHazardNotifier {
     public double Pressure { get; private set; }
     
-    public GasContainer(double weight, double height, double depth, double deadWeight, double maxLoad, double pressure)
-        : base(ContainerType.G, weight, height, depth, deadWeight, maxLoad)
+    public GasContainer(double width, double height, double depth, double deadWeight, double maxLoad, double pressure)
+        : base(ContainerType.G, width, height, depth, deadWeight, maxLoad)
     {
         Pressure = pressure;
     }

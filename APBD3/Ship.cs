@@ -25,7 +25,7 @@ public class Ship
             return false;
         }
 
-        var totalWeight = Containers.Sum(c => c.DeadWeight + c.LoadMass + c.Weight);
+        var totalWeight = Containers.Sum(c => c.DeadWeight + c.LoadMass + c.Width);
         if (totalWeight + container.DeadWeight + container.LoadMass > MaxWeightTons * 1000)
         {
             Console.WriteLine("Maximum ship weight has been exceeded");

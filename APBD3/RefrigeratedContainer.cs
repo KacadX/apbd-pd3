@@ -10,8 +10,8 @@ public class RefrigeratedContainer : Container {
         { "Cheese", 7.2 }, { "Sausages", 5 }, { "Butter", 20.5 }, { "Eggs", 19 }
     };
     
-    public RefrigeratedContainer(double weight, double height, double depth, double deadWeight, double maxLoad, string product, double temperature)
-        : base(ContainerType.C, weight, height, depth, deadWeight, maxLoad)
+    public RefrigeratedContainer(double width, double height, double depth, double deadWeight, double maxLoad, string product, double temperature)
+        : base(ContainerType.C, width, height, depth, deadWeight, maxLoad)
     {
         if (!AllowedTemperatures.TryGetValue(product, out var allowedTemperature))
             throw new ArgumentException("Invalid product type");
